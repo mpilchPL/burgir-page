@@ -1,0 +1,106 @@
+:root {
+    --theme-font-color: rgb(204, 204, 204);
+    --theme-background: rgb(14, 14, 14);
+    --footer-background: rgb(110, 0, 0);
+    --menuoption-hoover: white;
+
+    /* BUTTON*/
+    --button-background-color: rgba(0, 0, 0, 0.247);
+    --button-hoover-background-color: rgba(0, 0, 0, 0.452);
+}
+
+#menu-content {
+    height: 100%;
+    padding: 0 2vh;
+    margin-top: 40vh;
+}
+
+#menu-content h1, h2 {
+    text-align: center;
+    margin: 0 0 2vh 0;
+}
+
+#menu-content h1 {
+    font-size: 3em;
+}
+
+#menu-content h2 {
+    font-size: 2em;
+    margin-bottom: 10vh;
+}
+
+#menu-content p {
+    text-align: center;
+}
+
+#menu-content h2 span:first-child {
+    color: green;
+}
+
+#menu-content h2 span:last-child {
+    color: red;
+}
+
+#welcome-page{
+    width: 100%;
+    background-image: url("../img/pizzabg.mp4");
+}
+
+#background-video{
+    width: 100%;
+    position: fixed;
+    opacity: 0.5;
+}
+
+#background-div{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#menu-content{
+    width: 80vw;
+    height: auto;
+    padding: 30px;
+    margin: 250px auto 50px auto;
+    background-color: #171215;
+    opacity: 0.8;
+
+}
+
+td, th{
+    border-right: 2px antiquewhite solid;
+    color: antiquewhite;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+table{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td:last-child, th:last-child{
+    border-right: none;
+}
+
+.ingredients{
+    font-size: 0.75em;
+    padding-left: 20px;
+    text-align: left;
+}
