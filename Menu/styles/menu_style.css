@@ -139,8 +139,19 @@ main{
         left: 0;
     }
 
+    #menu-content h1{
+        display: none;
+    }
+
+    table{
+        background-color: #171215;
+        opacity: 0.9;
+    }
+
     #menu-content{
         width: 100%;
+        padding: 0;
         
     }
+
 }
