@@ -1,3 +1,5 @@
+/* #region main components */
+
 :root {
     --theme-font-color: rgb(204, 204, 204);
     --theme-background: rgb(14, 14, 14);
@@ -28,6 +30,7 @@ body {
     border-radius: 1vh;
     background-color: var(--button-background-color);
     transition: color, background-color .5s;
+    user-select: none;
 }
 
 .btn:hover {
@@ -196,3 +199,5 @@ footer .content p:first-child {
         display: none !important;
     }
 }
+
+/* #endregion */
