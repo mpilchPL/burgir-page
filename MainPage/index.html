@@ -16,12 +16,29 @@
                             <div>Serious Gourmet Pizza</div>
                         </div>
                         <ul id="menu-options" class="no-phone">
-                            <li><a href="">Strona Glowna</a></li>
-                            <li><a href="">O nas</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">Kontakt</a></li>
-                            <li><a href="">Zarezerwuj Stolik</a></li>
+                            <li><a href="#">Strona Glowna</a></li>
+                            <li class="about-us-link"><a href="#">O nas</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Zarezerwuj Stolik</a></li>
                         </ul>
+                    </div>
+
+                    <div class="menu-expander">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="expandable">
+                        <div class="menu-collapsable">
+                            <ul>
+                                <li><a href="#">Strona Glowna</a></li>
+                                <li class="about-us-link"><a href="#">O nas</a></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="#">Zarezerwuj Stolik</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
                 <div id="welcome-content">
@@ -30,22 +47,36 @@
                     <div id="btn-order-table" class="btn">Zamow stolik online!</div>
                     <p>Lub zadzwon: <span id="tel-number">12 345 67 89</span></p>
                 </div>
-                
+                <div class="about-us-link" id="btn-goto-about">
+                    <div>Poznaj nas</div>
+                </div>
             </div>
         </header>
         <main>
             <article>
                 <header>
-                    
+                    <div id="about-us" class="about-header">
+                        <div class="about-header-content">
+                            <h1>Najlepsza pizza z zamrazary w Polsce.</h1>
+                            <h2>...albo przynajmniej w Suwalkach.</h2>
+                        </div>
+                    </div>
                 </header>
-                <div class="content">
-                    
-                    
+                <div class="about-content">
+                    <div class="content-left">
+                        <img src="img/welcome-screen3.jpg" alt="">
+                    </div>
+                    <div class="content-right">
+                        <p>asdasdas</p>
+                        <p>asdasdas</p>
+                        <p>asdasdas</p>
+                        <p>asdasdas</p>
+                    </div>
                 </div>
             </article>
 
             <footer>
-                <div class="content vcenter">
+                <div class="content">
                     <div>
                         <p>Contact</p>
                         <p>email.email@email.email</p>
@@ -57,5 +88,12 @@
                 </div>
             </footer>
         </main>
+
+        <!--### jQuery ###-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="scripts/jquery.scrollTo.min.js"></script>
+        <script src="scripts/pageScrolling.js"></script>
+        <script src="scripts/effects.js"></script>
     </body>
 </html>
