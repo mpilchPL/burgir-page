@@ -73,7 +73,7 @@ header{
     width: 80vw;
     height: auto;
     padding: 30px 0;
-    margin: 250px auto 50px auto;
+    margin: 100px auto 50px auto;
     background-color: #171215;
     opacity: 0.9;
 
@@ -126,7 +126,7 @@ tr:hover{
 
 main{
     position: absolute;
-    top: 0;
+    top: 10vw;
     z-index: 100000;
     width: 80%;
     left: 10%;
