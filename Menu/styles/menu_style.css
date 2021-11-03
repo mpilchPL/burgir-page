@@ -131,3 +131,16 @@ main{
     width: 80%;
     left: 10%;
 }
+
+@media only screen and (max-width: 600px) {
+    main{
+        margin: 0 auto;
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-content{
+        width: 100%;
+        
+    }
+}
