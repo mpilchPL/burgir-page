@@ -1,5 +1,4 @@
 $('.menu-expander').click(function (e) { 
-    e.preventDefault();
     console.log("burgir");
     if ($('.menu-collapsable').css("display") == 'none') {
         $('.menu-collapsable').slideDown();
@@ -21,18 +20,15 @@ function HideExpandableMenu() {
 
  // MAP
  $('#btn-map').click(function (e) { 
-     e.preventDefault();
      $('#myModal').fadeIn();
  });
 
  $('.close').click(function (e) { 
-     e.preventDefault();
      $('#myModal').fadeOut();
  });
 
 
  $(window).click(function (e) { 
-     e.preventDefault();
      
     
      if ($(e.target) == $('#myModal')) {
