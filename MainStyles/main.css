@@ -86,6 +86,74 @@ body {
 
 /* #region NAVBAR */
 
+nav {
+    position: relative;
+    z-index: 1000;
+}
+/* #region EXPANDABLE */
+
+.menu-expander {
+    width: 50px;
+    height: fit-content;
+    border: 2px solid var(--theme-font-color);
+    border-radius: 5px;
+    margin: 1vh 0 0 1vw;
+    display: block;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.expandable {
+    position: relative;
+}
+
+.menu-collapsable {
+    display: none;
+    z-index: 1231;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.menu-expander:hover {
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 80%;
+    background-color: var(--theme-font-color);
+    margin: 8px auto;
+}
+
+.menu-collapsable a {
+    font-style: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.menu-collapsable ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-collapsable ul li {
+    font-size: 1.3em;
+    padding: 2vh 1vw;
+    text-align: center;
+    margin: 1vh 0;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+/* #endregion */
+
 .navbar {
     display: flex;
     padding: 1vh 0;
@@ -144,9 +212,39 @@ body {
     cursor: pointer;
 }
 
+.icon-box{
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.icon{
+    padding: 0;
+    margin:0;
+    width: 50px;
+    height: 35px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.icon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#pl{
+    background-image: url("../Menu/img/poland.png");
+
+}
+
+#en{
+    background-image: url("../Menu/img/en.jpg");
+}
 
 /* #endregion */
-
 
 /* #region FOOTER */
 
@@ -188,7 +286,7 @@ footer .content p:first-child {
 
 /* #endregion */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #welcome-content {
         margin-top: 10vh;
     }
@@ -196,4 +294,35 @@ footer .content p:first-child {
     .no-phone {
         display: none !important;
     }
+
+    .menu-expander {
+        display: block;
+    }
+
+    .about-content {
+        display: inline-block;
+    }
+
+    .ingredients-content {
+        display: inline-block;
+    }
+
+    .content-left, .content-right {
+        width: 100%
+    }
+
+    .contact-content {
+        display: inline-block;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%
+    }
+
+    .icon-box{
+        position: absolute;
+        right:0;
+        text-align: right;
+    }
+    
 }
