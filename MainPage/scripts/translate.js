@@ -14,7 +14,7 @@ function EnglishFlagClicked(){
     localStorage.setItem("language", "en");
     ChangeLanguage();
 }
-PolishFlagClicked()
+
 function ChangeLanguage(){
     var text = document.getElementsByClassName("text");
     
