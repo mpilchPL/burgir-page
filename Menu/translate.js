@@ -25,7 +25,8 @@ function ChangeLanguage(){
         "Nr.",
         "Nazwa",
         "Składniki",
-        
+        "Cena (PLN)"
+
     ]
     
     for(let i = 0; i < text.length; i++){
@@ -33,7 +34,7 @@ function ChangeLanguage(){
             text[i].innerHTML = englishDictionary[i]
         }
         else if(lang == "pl"){
-
+            text[i].innerHTML = polishDictionary[i]
         }
         
     }
