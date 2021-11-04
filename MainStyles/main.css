@@ -212,6 +212,37 @@ nav {
     cursor: pointer;
 }
 
+.icon-box{
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.icon{
+    padding: 0;
+    margin:0;
+    width: 50px;
+    height: 35px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.icon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#pl{
+    background-image: url("../Menu/img/poland.png");
+
+}
+
+#en{
+    background-image: url("../Menu/img/en.jpg");
+}
 
 /* #endregion */
 
@@ -286,6 +317,12 @@ footer .content p:first-child {
 
     .contact-left, .contact-right {
         width: 100%
+    }
+
+    .icon-box{
+        position: absolute;
+        right:0;
+        text-align: right;
     }
     
 }
