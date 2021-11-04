@@ -127,7 +127,7 @@ tr:hover{
 main{
     position: absolute;
     top: 10vw;
-    z-index: 100000;
+    z-index: 10;
     width: 80%;
     left: 10%;
 }
