@@ -1,6 +1,7 @@
 $('.menu-expander').click(function (e) { 
     if ($('.menu-collapsable').css("display") == 'none') {
         $('.menu-collapsable').slideDown();
+        $('audio#burgirAudio')[0].play();
     }
     else {
         HideExpandableMenu();
@@ -38,6 +39,5 @@ function HideExpandableMenu() {
  });
 
  $('#logo-img').click(function (e) { 
-     e.preventDefault();
      $('audio#sound')[0].play();
  });
