@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Serious Gourmet Pizza</title>
         <link rel="stylesheet" href="styles/main.css">
+
+        <audio src="sounds/sound.mp3" type="audio/mpeg" id="sound"></audio>
     </head>
     <body>
         <header>
@@ -12,50 +14,136 @@
                 <nav>
                     <div class="navbar">
                         <div class="navbar-logo no-phone">
-                            <a href="index.html"><img src="img/serious-logo-with-pizza.png" alt=""></a>
+                            <a href="index.html">
+                                <img id="logo-img" src="img/serious-logo-with-pizza.png" alt="">
+                            </a>
                             <div>Serious Gourmet Pizza</div>
                         </div>
                         <ul id="menu-options" class="no-phone">
-                            <li><a href="">Strona Glowna</a></li>
-                            <li><a href="">O nas</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">Kontakt</a></li>
-                            <li><a href="">Zarezerwuj Stolik</a></li>
+                            <li><a href="index.html">Strona Glowna</a></li>
+                            <li class="about-us-link"><a href="#">O nas</a></li>
+                            <li><a href="../Menu/menu.html">Menu</a></li>
+                            <li class="contact-link"><a href="#">Kontakt</a></li>
+                            <li><a href="../Booking/booking.html">Zarezerwuj Stolik</a></li>
                         </ul>
+                    </div>
+
+                    <div class="menu-expander">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="expandable">
+                        <div class="menu-collapsable">
+                            <ul>
+                                <li><a href="index.html">Strona Glowna</a></li>
+                                <li class="about-us-link"><a href="#">O nas</a></li>
+                                <li><a href="../Menu/menu.html">Menu</a></li>
+                                <li class="contact-link"><a href="#">Kontakt</a></li>
+                                <li><a href="../Booking/booking.html">Zarezerwuj Stolik</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
                 <div id="welcome-content">
                     <h1>Serious Gourmet Pizza</h1>
-                    <h2><span>Hu</span><span>ng</span><span>ry</span>?</h2>
+                    <h4><span>Hu</span><span>ng</span><span>ry</span>?</h4>
                     <div id="btn-order-table" class="btn">Zamow stolik online!</div>
                     <p>Lub zadzwon: <span id="tel-number">12 345 67 89</span></p>
                 </div>
-                
+                <div class="about-us-link" id="btn-goto-about">
+                    <div>Poznaj nas</div>
+                </div>
             </div>
         </header>
         <main>
             <article>
                 <header>
-                    
+                    <div id="about-us" class="about-header">
+                        <div class="about-header-content">
+                            <h1>Najlepsza pizza z zamrazary w Polsce.</h1>
+                            <h2>...albo przynajmniej w Suwalkach.</h2>
+                        </div>
+                    </div>
                 </header>
-                <div class="content">
-                    
-                    
+                <div class="about-content">
+                    <div class="content-left">
+                        <img src="img/welcome-screen3.jpg" alt="">
+                    </div>
+                    <div class="content-right">
+                        <h2>Our pizza good.</h2>
+                        <h3>Very wow good.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                        <p> aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+                <div class="ingredients-content">
+                    <div class="content-left">
+                        <img src="img/beer.jpg" alt="">
+                    </div>
+                    <div class="content-right">
+                        <h2>Beer is good and healthy.</h2>
+                        <h3>Try our beer. Very wow beer.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                             nisi ut.
+                        </p> 
+                    </div>
                 </div>
             </article>
 
             <footer>
-                <div class="content vcenter">
-                    <div>
-                        <p>Contact</p>
-                        <p>email.email@email.email</p>
-                        <p>12 345 67 89</p>
+                <div id="contact" class="contact-content">
+                    <div class="contact-left">
+                        <div class="contact-info">
+                            <div id="address">
+                                Suwalkowa 1, Suwalki
+                            </div>
+                            <p id="phoneNumber">12 345 67 89</p>
+                            <p id="email">gourmet.shit@suwalki.gov.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <p>Find us here!</p>
+                        <div id="btn-map">
+                            <img src="img/suwalki.png" alt="">
+                        </div>
                     </div>
                 </div>
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>You can find us here</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/suwalki.png" alt="">
+                        </div>
+                    </div>
+                
+                </div>
+  
+                
                 <div class="signature">
                     <p>&copy; Copyright 2021 | <a href="licences/licences.html" target="_blank">Licences</a></p>
                 </div>
+                
             </footer>
         </main>
+
+        <!--### jQuery ###-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="scripts/jquery.scrollTo.min.js"></script>
+        <script src="scripts/pageScrolling.js"></script>
+        <script src="scripts/effects.js"></script>
     </body>
 </html>
