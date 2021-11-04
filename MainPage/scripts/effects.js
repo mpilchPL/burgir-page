@@ -1,5 +1,4 @@
 $('.menu-expander').click(function (e) { 
-    e.preventDefault();
     if ($('.menu-collapsable').css("display") == 'none') {
         $('.menu-collapsable').slideDown();
     }
@@ -7,6 +6,10 @@ $('.menu-expander').click(function (e) {
         HideExpandableMenu();
     }
     
+});
+
+$('#btn-order-table').click(function (e) { 
+    location.href='../booking/booking.html';
 });
 
 function HideExpandableMenu() { 
@@ -20,22 +23,21 @@ function HideExpandableMenu() {
 
  // MAP
  $('#btn-map').click(function (e) { 
-     e.preventDefault();
      $('#myModal').fadeIn();
  });
 
  $('.close').click(function (e) { 
-     e.preventDefault();
      $('#myModal').fadeOut();
  });
 
 
  $(window).click(function (e) { 
-     e.preventDefault();
-     
-     console.log($('#myModal'));
-     console.log(e.target);
-     if ($(e.target) == $('#myModal')) {
+     if (e.target == document.getElementById("myModal")) {
         $('#myModal').fadeOut();
      }
+ });
+
+ $('#logo-img').click(function (e) { 
+     e.preventDefault();
+     $('audio#sound')[0].play();
  });

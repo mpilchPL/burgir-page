@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Serious Gourmet Pizza</title>
         <link rel="stylesheet" href="styles/main.css">
+
+        <audio src="sounds/sound.mp3" type="audio/mpeg" id="sound"></audio>
     </head>
     <body>
         <header>
@@ -12,15 +14,17 @@
                 <nav>
                     <div class="navbar">
                         <div class="navbar-logo no-phone">
-                            <a href="index.html"><img src="img/serious-logo-with-pizza.png" alt=""></a>
+                            <a href="index.html">
+                                <img id="logo-img" src="img/serious-logo-with-pizza.png" alt="">
+                            </a>
                             <div>Serious Gourmet Pizza</div>
                         </div>
                         <ul id="menu-options" class="no-phone">
-                            <li><a href="#">Strona Glowna</a></li>
+                            <li><a href="index.html">Strona Glowna</a></li>
                             <li class="about-us-link"><a href="#">O nas</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Kontakt</a></li>
-                            <li><a href="#">Zarezerwuj Stolik</a></li>
+                            <li><a href="../Menu/menu.html">Menu</a></li>
+                            <li class="contact-link"><a href="#">Kontakt</a></li>
+                            <li><a href="../Booking/booking.html">Zarezerwuj Stolik</a></li>
                         </ul>
                     </div>
 
@@ -32,18 +36,18 @@
                     <div class="expandable">
                         <div class="menu-collapsable">
                             <ul>
-                                <li><a href="#">Strona Glowna</a></li>
+                                <li><a href="index.html">Strona Glowna</a></li>
                                 <li class="about-us-link"><a href="#">O nas</a></li>
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">Kontakt</a></li>
-                                <li><a href="#">Zarezerwuj Stolik</a></li>
+                                <li><a href="../Menu/menu.html">Menu</a></li>
+                                <li class="contact-link"><a href="#">Kontakt</a></li>
+                                <li><a href="../Booking/booking.html">Zarezerwuj Stolik</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
                 <div id="welcome-content">
                     <h1>Serious Gourmet Pizza</h1>
-                    <h2><span>Hu</span><span>ng</span><span>ry</span>?</h2>
+                    <h4><span>Hu</span><span>ng</span><span>ry</span>?</h4>
                     <div id="btn-order-table" class="btn">Zamow stolik online!</div>
                     <p>Lub zadzwon: <span id="tel-number">12 345 67 89</span></p>
                 </div>
@@ -71,33 +75,32 @@
                         <h3>Very wow good.</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                             nisi ut
                         </p>
                         <p> aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                             officia deserunt mollit anim id est laborum.
+                             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
                     </div>
                 </div>
                 <div class="ingredients-content">
                     <div class="content-left">
-                        <img src="img/welcome-screen2.jpg" alt="">
+                        <img src="img/beer.jpg" alt="">
                     </div>
                     <div class="content-right">
-                        <h2>Our ingredients good.</h2>
-                        <h3>Very wow good.</h3>
-                        <h3>Good pomidoro.</h3>
-                        <h3>Good formagio.</h3>
-                        <h3>Good basilico sante pietro.</h3>
-                        <h3>We much recommend.</h3>
+                        <h2>Beer is good and healthy.</h2>
+                        <h3>Try our beer. Very wow beer.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                             nisi ut.
+                        </p> 
                     </div>
                 </div>
             </article>
 
             <footer>
-                <div class="contact-content">
+                <div id="contact" class="contact-content">
                     <div class="contact-left">
                         <div class="contact-info">
                             <div id="address">
@@ -109,24 +112,20 @@
                     </div>
                     <div class="contact-right">
                         <p>Find us here!</p>
-                        <div id="btn-map"><img src="img/suwalki.png" alt=""></div>
+                        <div id="btn-map">
+                            <img src="img/suwalki.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <!-- The Modal -->
                 <div id="myModal" class="modal">
 
-                    <!-- Modal content -->
                     <div class="modal-content">
                         <div class="modal-header">
                             <span class="close">&times;</span>
-                            <h2>Modal Header</h2>
+                            <h2>You can find us here</h2>
                         </div>
-                    <div class="modal-body">
-                        <p>Some text in the Modal Body</p>
-                        <p>Some other text...</p>
-                    </div>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
+                        <div class="modal-body">
+                            <img src="img/suwalki.png" alt="">
                         </div>
                     </div>
                 
