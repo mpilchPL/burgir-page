@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", ChangeLanguage)
 
+const pl = document.getElementById("pl");
+const en = document.getElementById("en")
+pl.addEventListener("click", PolishFlagClicked);
+en.addEventListener("click", EnglishFlagClicked);
+
 function PolishFlagClicked(){
     localStorage.setItem("language", "pl");
     ChangeLanguage();
@@ -15,7 +20,6 @@ function ChangeLanguage(){
     
     var englishDictionary = [
         "Main Page",
-        "About Us",
         "Menu",
         "Contact",
         "Book table",
@@ -27,7 +31,6 @@ function ChangeLanguage(){
     
     var polishDictionary = [
         "Strona Główna",
-        "O nas",
         "Menu",
         "Kontakt",
         "Zarezerwuj",
@@ -44,12 +47,12 @@ function ChangeLanguage(){
         "Cheese, Tomato sauce, Mushrooms",
         "Cheese, Tomato sauce, Salame, Jalapeno",
         "Cheese, Tomato sauce, Chicken, Paprika, Mushrooms",
+        "Cheese, Tomato sauce, Salame, Jalapeno",
         "Cheese, Tomato sauce, Ham, Pineapple",
         "Nutella, Banana",
         "Frozen cheese, Frozen tomato sauce, Frozen ham",
         "Cheese, Tomato sauce, Ham, Mozarella",
         "Cheese, Tomato sauce, Olives, Feta cheese, Rucola",
-        "Cheese, Tomato sauce, Salame, Jalapeno",
         "Cheese, Tomato sauce, Chicken, Paprika, Mushrooms",
         "Cheese, Tomato sauce, Ham, Chicken, Salame, Mozarella",
 
@@ -61,11 +64,11 @@ function ChangeLanguage(){
         "Ser, Sos pomidorowy, Pieczarki",
         "Ser, Sos pomidorowy, Salami, Jalapeno",
         "Ser, Sos pomidorowy, Kurczak, Papryka, Pieczarki",
+        "Ser, Sos pomidorowy, Salami, Jalapeno",
         "Ser, Sos pomidorowy, Szynka, Ananas",
         "Nutella, Banan",
         "Mrożony Ser, Mrożony Sos pomidorowy, Mrożony Szynka",
         "Ser, Sos pomidorowy, Szynka, Mozarella",
-        "Ser, Sos pomidorowy, Salami, Jalapeno",
         "Ser, Sos pomidorowy, Kurczak, Papryka, Pieczarki",
         "Ser, Sos pomidorowy, Oliwki, Ser feta, Rukola",
         "Ser, Sos pomidorowy, Szynka, Kurczak, Salami, Mozarella",
@@ -74,7 +77,6 @@ function ChangeLanguage(){
 
     var englishBurgir = [
         "Main Page",
-        "About Us",
         "Menu",
         "Contact",
         "Book table",
@@ -82,7 +84,6 @@ function ChangeLanguage(){
 
     var polishBurgir = [
         "Strona Główna",
-        "O nas",
         "Menu",
         "Kontakt",
         "Zarezerwuj",
