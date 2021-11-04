@@ -9,7 +9,7 @@ function EnglishFlagClicked(){
     localStorage.setItem("language", "en");
     ChangeLanguage();
 }
-
+PolishFlagClicked()
 function ChangeLanguage(){
     var text = document.getElementsByClassName("text");
     
@@ -23,6 +23,19 @@ function ChangeLanguage(){
         "Name",
         "Ingredients",
         "Prince (PLN)"
+    ]
+    
+    var polishDictionary = [
+        "Strona Główna",
+        "O nas",
+        "Menu",
+        "Kontakt",
+        "Zarezerwuj",
+        "Nr.",
+        "Nazwa",
+        "Składniki",
+        "Cena (PLN)"
+
     ]
 
     var englishIngredients =[
@@ -58,18 +71,23 @@ function ChangeLanguage(){
         "Ser, Sos pomidorowy, Szynka, Kurczak, Salami, Mozarella",
     ]
     
-    var polishDictionary = [
+
+    var englishBurgir = [
+        "Main Page",
+        "About Us",
+        "Menu",
+        "Contact",
+        "Book table",
+    ]
+
+    var polishBurgir = [
         "Strona Główna",
         "O nas",
         "Menu",
         "Kontakt",
         "Zarezerwuj",
-        "Nr.",
-        "Nazwa",
-        "Składniki",
-        "Cena (PLN)"
-
     ]
+
     
     for(let i = 0; i < text.length; i++){
         if(localStorage.getItem("language") == "en"){
@@ -89,6 +107,18 @@ function ChangeLanguage(){
         }
         else{
             ingredients[i].innerHTML = polishIngredients[i]
+        }
+        
+    }
+
+    var burgir = document.getElementsByClassName("burgirText")
+
+    for(let i = 0; i < burgir.length; i++){
+        if(localStorage.getItem("language") == "en"){
+            burgir[i].innerHTML = englishBurgir[i]
+        }
+        else{
+            burgir[i].innerHTML = polishBurgir[i]
         }
         
     }
