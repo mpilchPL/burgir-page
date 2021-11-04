@@ -17,3 +17,25 @@ function HideExpandableMenu() {
      HideExpandableMenu();
      
  });
+
+ // MAP
+ $('#btn-map').click(function (e) { 
+     e.preventDefault();
+     $('#myModal').fadeIn();
+ });
+
+ $('.close').click(function (e) { 
+     e.preventDefault();
+     $('#myModal').fadeOut();
+ });
+
+
+ $(window).click(function (e) { 
+     e.preventDefault();
+     
+     console.log($('#myModal'));
+     console.log(e.target);
+     if ($(e.target) == $('#myModal')) {
+        $('#myModal').fadeOut();
+     }
+ });
